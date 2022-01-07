@@ -1,8 +1,3 @@
-<?php 
-
-    include('variable.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +17,13 @@
             <th>Prix</th>
             <th></th>
         </tr>
-        <?php foreach($voyages as $ref => $voyage): ?>
+        <?php foreach($voyages as $voyage): ?>
         <tr>
-            <td><?php echo $ref; ?></td>
-            <td><?php echo $voyages[$ref]['nom'];?></td>
-            <td><?php echo $category[$voyages[$ref]['category']]['nom'];?></td>
-            <td><?php echo $voyages[$ref]['accroche'];?></td>
-            <td><?php echo number_format($voyages[$ref]['prix'], 2, ',', ' ');?></td>
-            <td><a href="detail.php?ref=<?php echo $ref ?>">Voir le détail</a></td>
+            <td><?php echo $voyages->ref; ?></td>
+            <td><?php echo $voyages->nom;?></td>
+            <td><?php echo $voyages->accroche;?></td>
+            <td><?php echo number_format($voyages->prix, 2, ',', ' ');?></td>
+            <td><a href="detail.php?ref=<?php echo $voyage->ref ?>">Voir le détail</a></td>
         </tr>
         <?php endforeach ?>
     </table>
