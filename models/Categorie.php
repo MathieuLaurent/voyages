@@ -8,39 +8,39 @@ class Categorie{
     
     public function __construct(string $ref, string $nom, string $description){
 
-        $this -> ref = $ref;
-        $this -> nom = $nom;
-        $this -> description;
+        $this -> _ref = $ref;
+        $this -> _nom = $nom;
+        $this -> _description = $description;
     }
 
     public function setRef($ref){
-        $this -> ref = ref;
+        $this -> _ref = $ref;
         return $this;
 
     }
     
     public function getRef(){
-        return $this -> ref;
+        return $this -> _ref;
     }
 
     public function setNom($nom){
-        $this -> nom = nom;
+        $this -> _nom = $nom;
         return $this;
 
     }
     
     public function getNom(){
-        return $this -> nom;
+        return $this -> _nom;
     }
 
-    public function setDescription($descr){
-        $this -> description = description;
+    public function setDescription($description){
+        $this -> _description = $description;
         return $this;
 
     }
     
     public function getDescription(){
-        return $this -> description;
+        return $this -> _description;
     }
         
     

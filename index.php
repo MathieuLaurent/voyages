@@ -1,6 +1,7 @@
 <?php 
 
-require_once('models/Autoloader.php');
+require('models/Autoloader.php');
+Autoloader::register();
 
 if(!empty($_GET['action'])){
     switch($_GET['action']){

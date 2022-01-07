@@ -1,6 +1,5 @@
 <?php 
 
-require_once('models/Autoloader.php');
 
 $voyage1 = new Voyage("VOY1", "Séjour aux Caraïbes","Parfait pour vous relaxer",700,7,"","","","");
 $voyage2 = new Voyage("VOY2", "Séjour aux Maldives","Idéal pour prendre un bain de soleil",2000,14,"","","","");

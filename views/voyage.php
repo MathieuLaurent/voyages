@@ -17,13 +17,13 @@
             <th>Prix</th>
             <th></th>
         </tr>
-        <?php foreach($voyages as $voyage): ?>
+        <?php foreach($listVoyage as $voyage): ?>
         <tr>
-            <td><?php echo $voyages->ref; ?></td>
-            <td><?php echo $voyages->nom;?></td>
-            <td><?php echo $voyages->accroche;?></td>
-            <td><?php echo number_format($voyages->prix, 2, ',', ' ');?></td>
-            <td><a href="detail.php?ref=<?php echo $voyage->ref ?>">Voir le détail</a></td>
+            <td><?php echo $voyage->getRef(); ?></td>
+            <td><?php echo $voyage->getNom();?></td>
+            <td><?php echo $voyage->getAccroche();?></td>
+            <td><?php echo number_format($voyage->getPrix(), 2, ',', ' ');?></td>
+            <td><a href="detail.php?ref=<?php echo $voyage->getRef() ?>">Voir le détail</a></td>
         </tr>
         <?php endforeach ?>
     </table>
